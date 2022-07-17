@@ -8,7 +8,7 @@ void main() {
     studentGrades = (float **)malloc(sizeof(float *) * numberOfStudents);
 
     int numberOfGradesPerStudent;
-    printf(ds"Informe a quantidade de notas de cada estudante: ");
+    printf("Informe a quantidade de notas de cada estudante: ");
     scanf("%i", &numberOfGradesPerStudent);
 
     for (int studentIndex = 0; studentIndex < numberOfStudents; studentIndex++) {
