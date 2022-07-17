@@ -21,6 +21,12 @@ void printGrades(float **studentGrades, int numberOfStudents, int numberOfGrades
     }
 }
 
+void freePointerToPointer(float **doublePointer, int numberOfRows) {
+    for (int index = 0; index < numberOfRows; index++) {
+        free(doublePointer[index]);
+    }
+}
+
 void main() {
     int numberOfStudents = 5;
     float **studentGrades;
@@ -32,4 +38,5 @@ void main() {
 
     populateGrades(studentGrades, numberOfStudents, numberOfGradesPerStudent);
     printGrades(studentGrades, numberOfStudents, numberOfGradesPerStudent);
+    freePointerToPointer(studentGrades, numberOfStudents);
 }
