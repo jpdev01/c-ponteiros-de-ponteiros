@@ -3,4 +3,4 @@ project(untitled1 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(untitled1 01.c 02.c 03.c)
+add_executable(untitled1 01.c 02.c 03.c 04.c)
