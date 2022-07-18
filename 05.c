@@ -85,6 +85,11 @@ void main() {
 
     int numberOfRowsB = inputNumberOfRows("B");
     int numberOfColumnsB = inputNumberOfColumns("B");
+
+    if (numberOfColumns != numberOfRowsB) {
+        printf("O número de colunas da Matriz A deve ser igual ao número de linhas da matriz B");
+        return;
+    }
     int **arrayB = inputArrayPointerToPointer(numberOfRowsB, numberOfColumnsB);
 
     int **resultMultiply = multiplyArray(arrayA, numberOfRows, numberOfColumns, arrayB, numberOfRowsB, numberOfColumnsB);
